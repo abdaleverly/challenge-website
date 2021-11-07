@@ -9,6 +9,9 @@ def home():
 
 @views.route("/version")
 def version():
+    f = open("version.txt")
+    version = f.readline()
+    f.close()
     return f"{version}"
 
 @views.route("/now")
