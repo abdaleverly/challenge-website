@@ -1,2 +1,3 @@
 Simple flask app
-Try this one
+
+This repository includes the code and the pipeline artifacts
