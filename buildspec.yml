@@ -1,0 +1,9 @@
+version: 0.2
+env:
+  shell: bash
+phases:
+  build:
+    commands:
+      - |-
+        git describe --abbrev=0 --tags > version.txt || \
+        git rev-parse --short=8 HEAD > version.txt
