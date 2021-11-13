@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /challenge.service
-    destination: /etc/systemd/system/challenge.service
+    destination: /etc/systemd/system
   - source: /
     destination: /srv/challenge-website
 hooks:
