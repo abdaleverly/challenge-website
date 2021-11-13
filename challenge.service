@@ -3,10 +3,10 @@ Description=Gunicorn instance for challenge website
 After=network.target
 
 [Service]
-User=ubuntu
+User=www-data
 Group=www-data
 WorkingDirectory=/srv/challenge-website
-ExecStart=/usr/local/bin/gunicorn -b 0.0.0.0:80 app:app
+ExecStart=/usr/local/bin/gunicorn -b 0.0.0.0:8000 app:app
 Restart=always
 
 [Install]
