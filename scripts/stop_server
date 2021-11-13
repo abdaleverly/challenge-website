@@ -1,4 +1,5 @@
 #!/bin/bash
-set -e
-
-systemctl stop challenge || true
+service_exists=`pgrep challenge`
+if [[ -n  $service_exists ]]; then
+  service challenge stop        
+fi
