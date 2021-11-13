@@ -1,8 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: /challenge.service
+  - source: /web-config/challenge.service
     destination: /etc/systemd/system
+  - source: /web-config/default
+    destination: /etc/nginx/sites-available
   - source: /
     destination: /srv/challenge-website
 hooks:
