@@ -5,6 +5,7 @@ phases:
   build:
     commands:
       - git log --oneline
+      - echo "update version file"
       - |-
         git describe --abbrev=0 --tags > version.txt || \
         git rev-parse --short=8 HEAD > version.txt
