@@ -1,11 +1,8 @@
-Simple flask app
+# Simple flask app
 
-This repository includes the code and the pipeline artifacts.
+This repository includes:
+- Web application code
+- Web frontend config code
+- Pipeline code - includes buildspec and appspec files
 
-The buildspec here is for demo purposes
-
-It includes code to configure initd files
-
-It also includes buildspec and appspec files to provide instructions to pipeline componenets.
-
-It uses uwsgi as a webserver.
+It uses nginx with gunicorn to serve flask application

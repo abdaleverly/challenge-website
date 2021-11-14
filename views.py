@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint,jsonify
 from datetime import datetime
 
 views = Blueprint(__name__, "views")
@@ -12,7 +12,7 @@ def version():
     f = open("version.txt")
     version = f.readline()
     f.close()
-    return f"{version}"
+    return jsonify(version=version)
 
 @views.route("/now")
 def now():
