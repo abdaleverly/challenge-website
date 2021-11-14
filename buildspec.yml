@@ -8,7 +8,7 @@ phases:
       - echo "update version file"
       - |-
         git describe --exact-match --abbrev=0 --tags > version.txt || \
-        git rev-parse --short=8 HEAD > version.txt
+        git rev-parse --short=7 HEAD > version.txt
       - cat version.txt
 artifacts:
   files:
