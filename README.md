@@ -6,3 +6,7 @@ This repository includes:
 - Pipeline code - includes buildspec and appspec files
 
 It uses nginx with gunicorn to serve flask application
+
+The url_path
+/version - JSON response of current app version
+/now - current time 
