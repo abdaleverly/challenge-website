@@ -12,7 +12,7 @@ def version():
     f = open("version.txt")
     version = f.readline()
     f.close()
-    return jsonify(version=version)
+    return jsonify(version=version.replace("\n",""))
 
 @views.route("/now")
 def now():
