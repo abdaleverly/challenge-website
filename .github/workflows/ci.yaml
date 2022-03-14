@@ -4,10 +4,10 @@ on:
   push:
 
 jobs:
-  source:
+  flask pipeline:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Source
         uses: actions/checkout@v3
-      - name: list files
-        run: ls -l
+      - name: Build
+        run: python install -r requirements.txt
